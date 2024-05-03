@@ -56,10 +56,27 @@ public class Patterns{
      }
      
 
+    public static void Hello_trangels(int n){
+       
+       //1st half
+       for (i=)
+     //star -i
+
+
+
+     //spaces 2*(n-1)
+
+
+
+     //star -1
+     
+    }
+
+
    public static void main(String args[]){
     //   hello_rectangles(4,5);
     //    half_pre(4);
     // Pra_Numbers(5);
-    Floyd_trangle(4);
+    // Floyd_trangle(4);
    }
 }
