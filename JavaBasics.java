@@ -8,6 +8,7 @@ public class JavaBasics{
       for (int chars=1 ; chars<=line; chars ++){
         System.out.print(ch);
         ch++;
+        
       }
       System.out.println();
     }
