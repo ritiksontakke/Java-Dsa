@@ -55,7 +55,7 @@ public class Patterns{
 
      }
      
-
+         //spiral martix que dsa
 
      public static void printSpiral(int martix[] []) {
        int startRow = 0;
