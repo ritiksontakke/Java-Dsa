@@ -56,27 +56,53 @@ public class Patterns{
      }
      
 
-    public static void Hello_trangels(int n){
-       
-       //1st half
-       for (i=)
-     //star -i
 
+     public static void printSpiral(int martix[] []) {
+       int startRow = 0;
+       int startCol = 0;
+       int endRow = martix.length - 1;
+       int endCol = martix[0].length - 1;
 
+       while( startRow <= endRow && startCol <= endCol ){
+        //top
+         for(int j = startCol ; j<=endCol; j++){
+            System.out.print(martix[startRow][j] + " ");
+         }
+         //right
+         for (int i= startRow+1; i<=endRow; i++){
+          System.out.print(martix[i][endCol] + " ");
+         }
+          //bottom
+         for (int j=endCol-1; j>=startCol; j--){
+          if(startRow==endRow){
+              break;
+          }
+          System.out.print(martix[endRow][j]+" ");
+         }
+           //left
+          for(int i=endRow-1; i>=startRow+1; i--){
+            if(startCol==endCol){
+              break;
+            }
+            System.out.print(martix[i][startCol] + " ");
+          }   
+           
+          startCol++;
+          startRow++;
+          endCol--;
+          endRow--;
 
-     //spaces 2*(n-1)
-
-
-
-     //star -1
-     
-    }
+       }
+          System.out.println();
+     }
 
 
    public static void main(String args[]){
-    //   hello_rectangles(4,5);
-    //    half_pre(4);
-    // Pra_Numbers(5);
-    // Floyd_trangle(4);
+      int martix[] [] = {
+        {1,2,3,4},
+        {5,6,7,8},
+        {9,10,11,12},
+        {13,14,15,16}};
+      printSpiral(martix);
    }
 }
