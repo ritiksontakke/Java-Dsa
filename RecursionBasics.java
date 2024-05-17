@@ -35,8 +35,21 @@ public class RecursionBasics{
         return fn;
     }
 
+
+    public static int tilingPro(int n){
+
+       if(n == 0 || n == 1){
+            return 1;
+       }
+
+
+        int fnm1 = tilingPro(n-1);
+        int fnm2 = tilingPro(n-2);
+        int totWay = fnm1 + fnm2;
+        return totWay;
+    }
+
     public static void main(String args []){
-        int n = 10;
-        System.out.println(calcSum(n));
+       System.out.print(tilingPro(2));
     }
 }
